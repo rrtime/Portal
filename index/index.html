@@ -6,37 +6,120 @@
     <title>着陆页</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css"/>
-  </head>
+</head>
   <body>
   <!--nav start-->
-    <nav class="navbar  navbar-new site-navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand logo" href="#"></a>
-            </div>
-            <div id="navbar" class="collapse navbar-collapse navbar-right dropdow-new">
-                <ul class="nav navbar-nav  nav-new">
-                    <li><a href="#">首页</a>
-                    </li>
-                    <li><a href="#introduce">代账</a>
-                    </li>
-                    <li><a href="#advantage">小微企业</a>
-                    </li>
-                    <li><a href="#vesion">登陆</a>
-                    </li>
-                    <li><a href="#">试用</a>
-                    </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-        </div>
-    </nav>
+  		<header class="header-fixed">
+    		<nav>
+        		<div class="glh-pageoverlay" aria-hidden="true"></div>
+                <div class="glh glh-mobile">
+                    <div class="glh-corenav">
+                        <button id="glh-mobile-toggle" class="glh-toggle glh-mainlink" type="button" aria-expanded="false">
+                            <span class="glh-hamburger"></span>
+                        </button>
+                        <a class="glh-logo" href="#" target="_self">
+                            <img src="images/logo.png" alt=""/>
+                        </a>
+                        <a class="glh-login glh-mainlink" href="#" target="_self">登录</a>
+                    </div>
+                    <div id="glh-mobile-dropdownnav" class="glh-dropdownnav" aria-labelledby="glh-mobile-toggle" aria-hidden="true">
+                        <div class="glh-dropdownnav-overlay" aria-hidden="true"></div>
+                        <ul class="glh-categories">
+                            <li>
+                                <a href="#" id="glh-mobile-category-1" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-1">
+                                    首页
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#introduce" id="glh-mobile-category-2" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-2">
+                                    介绍
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a  href="#advantage" id="glh-mobile-category-3" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-3">
+                                    我们优势
+                                </a>
+                            </li>
+        
+                            <li>
+                                <a href="#vesion" id="glh-mobile-category-4" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-4">
+                                    服务费用
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="glh glh-desktop">
+                    <div class="glh-corenav">
+                        <div class="container">
+                            <div class="row clear15">
+                            <div class="column">
+                                <div class="glh-wrapper">
+                                    <div class="glh-branding">
+                                        <a class="glh-logo" href="#" target="_self">
+                                            <img src="images/logo.png" alt="" title="">
+                                        </a>
+                                        <!--<span class="glh-strapline">Beautiful accounting software</span>-->
+                                    </div>
+                                    <ul class="glh-categories">
+                                        <li class="glh-dropdown">
+                                            <a id="glh-desktop-category-1" class="glh-category glh-mainlink " role="button" href="#" target="_self" aria-expanded="false">
+                                                首页
+                                            </a>
+                                        </li>
+        
+                                        <li class="glh-dropdown">
+                                            <a id="glh-desktop-category-2" class="glh-category glh-mainlink " role="button" href="#introduce" target="_self" aria-expanded="false">
+                                                介绍
+                                            </a>
+                                        </li>
+        
+                                        <li class="glh-dropdown">
+                                            <a id="glh-desktop-category-3" class="glh-category glh-mainlink " role="button" href="#advantage" target="_self" aria-expanded="false">
+                                                我们优势
+                                            </a>
+                                        </li>
+        
+                                        <li class="glh-dropdown">
+                                            
+        
+                                            <a id="glh-desktop-category-4" class="glh-category glh-mainlink" role="button" href="#vesion" aria-expanded="false">
+                                                服务费用
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a class="glh-mainlink" href="#" target="_self">
+                                                登录
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+        
+                    <!--<div id="glh-desktop-search" class="glh-search" role="search" aria-hidden="true">
+                        <div class="row clear15">
+                            <div class="column">
+                                <div class="glh-search-wrapper">
+                                    <gcse:searchbox-only autocompletemaxcompletions="5" queryparametername="q" resultsurl="https://www.xero.com/search/"></gcse:searchbox-only>
+        
+                                    <button type="button" class="glh-search-submit">
+                                        <span class="hide-element">Submit</span>
+                                        <svg role="presentation" class="icon">
+                                            <use xlink:href="/etc/designs/xero-cms/clientlib/assets/img/svg-sprites/icon.svg#ico-search"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>-->
+                </div>
+    		</nav>
+    	</header>  
   <!--nav end-->
   <!--banner start-->
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -82,32 +165,32 @@
                     	<div class="group">
                         	<img class="img-responsive rep-img" src="images/aierp.png" alt=""/>
                             <dl class="manage">
-                            	<dt class="manage-img"></dt>
+                            	<dt class="manage-img"><img src="images/manage-img.png" alt=""/></dt>
                                 <dd>供应链管理</dd>
                             </dl>
                             <dl class="manage2">
-                            	<dt class="manage-img2"></dt>
+                            	<dt class="manage-img2"><img src="images/manage-img2.png" alt=""/></dt>
                                 <dd>供应链管理</dd>
                             </dl>
                             <dl class="small-pic1">
-                            	<dt class="small-img1"></dt>
+                            	<dt class="small-img1"><img src="images/small-img1.png" alt=""/></dt>
                             </dl>
                             <dl class="shopping">
-                            	<dt class="shopping-img"></dt> 
+                            	<dt class="shopping-img"><img src="images/shopping-img.png" alt=""/></dt> 
                                 <dd>客户商城</dd>
                             </dl>
                             <dl class="small-pic2">
-                            	<dt class="small-img2"></dt>
+                            	<dt class="small-img2"><img src="images/small-img2.png" alt=""/></dt>
                             </dl>
                             <dl class="finance">
-                            	<dt class="finance-img"></dt>
+                            	<dt class="finance-img"><img src="images/finance-img.png" alt=""/></dt>
                                 <dd>财务管理</dd>
                             </dl>
                             <dl class="small-pic3">
-                            	<dt class="small-img3"></dt>
+                            	<dt class="small-img3"><img src="images/small-img3.png" alt=""/></dt>
                             </dl>
                             <dl class="small-pic4">
-                            	<dt class="small-img4"></dt>
+                            	<dt class="small-img4"><img src="images/small-img4.png" alt=""/></dt>
                             </dl>
                         </div>
                     </div>
@@ -251,22 +334,6 @@
     </div>
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script>
-    	$(function(){
-			$(window).scroll(function(){
-			   var sc=$(window).scrollTop();
-			   if(sc>300){
-				
-				$(".fixed").css("display","block");
-			   }else{
-			   $(".fixed").css("display","none");
-			   }
-			 })
-			$(".top").click(function(){
-			   var sc=$(window).scrollTop();
-			   $('body,html').animate({scrollTop:0},500);
-			 })
-		});
-    </script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
