@@ -3,7 +3,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>着陆页</title>
+    <title>Portal</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css"/>
 </head>
@@ -26,24 +26,24 @@
                         <div class="glh-dropdownnav-overlay" aria-hidden="true"></div>
                         <ul class="glh-categories">
                             <li>
-                                <a href="#" id="glh-mobile-category-1" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-1">
+                                <a  href="#"id="glh-mobile-category-1" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-1" >
                                     首页
                                 </a>
                             </li>
-                            <li>
-                                <a href="#introduce" id="glh-mobile-category-2" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-2">
+                            <li >
+                                <a href="#" id="glh-mobile-category-2" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-2" >
                                     介绍
                                 </a>
                             </li>
         
-                            <li>
-                                <a  href="#advantage" id="glh-mobile-category-3" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-3">
+                            <li >
+                                <a  href="#" id="glh-mobile-category-3" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-3" >
                                     我们优势
                                 </a>
                             </li>
         
-                            <li>
-                                <a href="#vesion" id="glh-mobile-category-4" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-4">
+                            <li >
+                                <a href="#" id="glh-mobile-category-4" class="glh-category" type="button" aria-expanded="false" aria-controls="glh-mobile-links-4" >
                                     服务费用
                                 </a>
                             </li>
@@ -63,28 +63,28 @@
                                         <!--<span class="glh-strapline">Beautiful accounting software</span>-->
                                     </div>
                                     <ul class="glh-categories">
-                                        <li class="glh-dropdown">
+                                        <li class="glh-dropdown" >
                                             <a id="glh-desktop-category-1" class="glh-category glh-mainlink " role="button" href="#" target="_self" aria-expanded="false">
                                                 首页
                                             </a>
                                         </li>
         
-                                        <li class="glh-dropdown">
-                                            <a id="glh-desktop-category-2" class="glh-category glh-mainlink " role="button" href="#introduce" target="_self" aria-expanded="false">
+                                        <li class="glh-dropdown" value="">
+                                            <a id="glh-desktop-category-2" class="glh-category glh-mainlink " role="button" href="#" target="_self" aria-expanded="false">
                                                 介绍
                                             </a>
                                         </li>
         
                                         <li class="glh-dropdown">
-                                            <a id="glh-desktop-category-3" class="glh-category glh-mainlink " role="button" href="#advantage" target="_self" aria-expanded="false">
+                                            <a id="glh-desktop-category-3" class="glh-category glh-mainlink " role="button" href="#" target="_self" aria-expanded="false">
                                                 我们优势
                                             </a>
                                         </li>
         
-                                        <li class="glh-dropdown">
+                                        <li class="glh-dropdown" >
                                             
         
-                                            <a id="glh-desktop-category-4" class="glh-category glh-mainlink" role="button" href="#vesion" aria-expanded="false">
+                                            <a id="glh-desktop-category-4" class="glh-category glh-mainlink" role="button" href="#" aria-expanded="false">
                                                 服务费用
                                             </a>
                                         </li>
@@ -110,7 +110,7 @@
                                     <button type="button" class="glh-search-submit">
                                         <span class="hide-element">Submit</span>
                                         <svg role="presentation" class="icon">
-                                            <use xlink:href="/etc/designs/xero-cms/clientlib/assets/img/svg-sprites/icon.svg#ico-search"></use>
+                                            <use xlink:href="/etc/designs/xero-cms/clientlib/assets/img/svg-sprites1/icon.svg#ico-search"></use>
                                         </svg>
                                     </button>
                                 </div>
@@ -156,6 +156,7 @@
           </div>
       </div>
   <!--banner end-->
+  <div class="div1" ></div>
   <!--purpose start-->
   		<div id="introduce" class="purpose">
         	<p class="advantage">AIERP能做什么</p>
@@ -198,6 +199,7 @@
             </div>
         </div>
   <!--purpose end-->
+   <div class="div2"></div>
   <!--grey start-->
   	<div id="advantage" class="grey">
     	<p class="advantage">AIERP的优势</p>
@@ -269,6 +271,7 @@
         </div>
     </div>
   <!--grey end-->
+   <div class="div3"></div>
   	<div id="vesion" class="cost">
     	<p class="advantage">版本费用情况</p>
         <div class="container">
@@ -335,5 +338,65 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/menu.js"></script>
+    <!--<script src="js/jquery.scrollbox.js"></script>-->
+    <script>
+	
+	$(document).ready(function(){
+		var top=$(".div1").offset().top;
+		var top1=$(".div2").offset().top;
+		var top2=$(".div3").offset().top;
+		$(".glh-categories").find('li:eq(0)').click(function(){
+		//$(".div1").css({top:event.clientY});
+		
+		//var top=$(".div1").offset().top;
+		
+		$("html, body").animate({scrollTop: 0 + "px"},500);
+		
+	
+		
+	})
+		
+	$(".glh-categories").find('li:eq(1)').click(function(){
+		//$(".div1").css({top:event.clientY});
+		
+		//var top=$(".div1").offset().top;
+		
+		$("html, body").animate({scrollTop: (top-70) + "px"},500);
+		
+	
+		
+	})
+		
+	$(".glh-categories").find('li:eq(2)').click(function(){
+		//$(".div1").css({top:event.clientY});
+		
+		//var top=$(".div2").offset().top;
+		
+		$("html, body").animate({scrollTop: (top1-70) + "px"},500);
+	
+		
+	})
+		
+	$(".glh-categories").find('li:eq(3)').click(function(){
+		//$(".div1").css({top:event.clientY});
+	//	
+//		var top=$(".div3").offset().top;
+		
+		$("html, body").animate({scrollTop: (top2-70) + "px"},500);
+	
+		
+	});
+	
+ 
+});
+/*$(window).scroll(function(){
+		var top=$(".div1").offset().top;
+		var top1=$(".div2").offset().top;
+		var top2=$(".div3").offset().top;
+		
+			
+	});
+*/
+    </script>
   </body>
 </html>
